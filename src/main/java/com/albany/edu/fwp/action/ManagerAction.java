@@ -132,6 +132,7 @@ public class ManagerAction extends ActionSupport {
      			Map.Entry<String,String[]> entry = (Map.Entry<String,String[]>) iterator.next();
      			System.out.println("Key : " + entry.getKey() + " Value :" + entry.getValue()[0]);
      			System.out.println(dateString);
+     			System.out.println("hi");
      			FoodItems foodItems= foodItemsDAO.getFoodItem(entry.getValue()[0]);
      			foodDateDAO.insertFoodSelected(foodItems, dateString);
      			//foodItems=foodItemsDAO.getFoodItem(entry.getKey());
